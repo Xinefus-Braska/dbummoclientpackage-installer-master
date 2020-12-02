@@ -15,10 +15,10 @@ I imagine the Windows invocation is not strikingly dissimilar.
 
 Sample use:
 ```
-git clone -b MUSHclient --depth 1 git@github.com:fiendish/aardwolfclientpackage.git NEW_AARDMUSH_RELEASE
-cd NEW_AARDMUSH_RELEASE
-wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/aardmush_installer.nsi
-wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/get_version.nsi
-wget https://raw.githubusercontent.com/fiendish/aardwolfclientpackage-installer/master/hello.rtf
-wine ~/.wine/drive_c/Program\ Files\ \(x86\)/NSIS/makensis.exe aardmush_installer.nsi
+git clone -b MUSHclient --depth 1 git@github.com:Xinefus-Braska/DBUMMOMUSH.git NEW_DBUMUSH_RELEASE
+cd NEW_DBUMUSH_RELEASE
+wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer-master/master/dbumush_installer.nsi
+wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer-master/master/get_version.nsi
+wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer/master/hello.rtf
+wine ~/.wine/drive_c/Program\ Files\ \(x86\)/NSIS/makensis.exe dbumush_installer.nsi
 ```
