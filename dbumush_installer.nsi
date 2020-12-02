@@ -1,8 +1,8 @@
-; DBU-MMO MUSHclient Package Installer
+; DBUMMO MUSHclient Package Installer
 ;
-; Thank you Fiendish of Aardwolf. 
+; Thank you Fiendish of Aardwolf.
 ;
-; Finally, an installer generator for the DBU-MMO MUSHclient Package?
+; Finally, an installer generator for the DBUMMO MUSHclient Package?
 ;
 ;--------------------------------
 SetCompressor /SOLID /FINAL lzma
@@ -22,10 +22,10 @@ SetCompressor /SOLID /FINAL lzma
 ShowInstDetails show
 
 ; Name of the package
-Name "DBU-MMO MUSHclient ${PackageVersion}"
+Name "DBUMMO MUSHclient ${PackageVersion}"
 
 ; File to write
-OutFile "DBU-MMO_MUSHclient_${PackageVersion}.exe"
+OutFile "DBUMMO_MUSHclient_${PackageVersion}.exe"
 
 ; rtf or txt file - remember if it is txt, it must be in the DOS text format (\r\n)
 LicenseData "hello.rtf"
@@ -41,7 +41,7 @@ InstallDirRegKey HKCU "Software\DBUMMOMUSHclient" "Install_Dir"
 ;RequestExecutionLevel admin
 
 ; Text to prompt the user to enter a directory
-DirText "This will install the DBU-MMO MUSHclient Package ( ${PackageVersion} )."
+DirText "This will install the DBUMMO MUSHclient Package ( ${PackageVersion} )."
 
 Page license
 Page directory
