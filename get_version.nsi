@@ -122,13 +122,13 @@ FunctionEnd
 !macroend
 !insertmacro Func_StrRep
 
-OutFile "GetAardwolfPackageVersion.exe"
+OutFile "GetDBUMMOPackageVersion.exe"
 SilentInstall silent
 
 Section
 
 ; Get file version
-${LineRead} "MUSHclient\AardwolfPackageChanges.txt" "3" $R0
+${LineRead} "MUSHclient\DBUMMOPackageChanges.txt" "3" $R0
 
 ${StrRep} $R0 $R0 "$\r$\n" ""
 ${StrRep} $R0 $R0 " snapshot" ""
