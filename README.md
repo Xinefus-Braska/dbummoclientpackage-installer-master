@@ -1,5 +1,5 @@
 # aardwolfclientpackage-installer
-NSIS installer creation scripts for https://github.com/fiendish/aardwolfclientpackage. This is run automatically with AppVeyor to build release installers whenever code is pushed to the main branch.
+NSIS installer creation scripts for https://github.com/Xinefus-Braska/DBUMMOMUSH. This is run automatically with AppVeyor to build release installers whenever code is pushed to the main branch.
 
 
 Directions for running manually:
