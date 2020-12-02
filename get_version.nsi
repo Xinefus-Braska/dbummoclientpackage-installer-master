@@ -1,16 +1,16 @@
-; Script, run at compile time by installer builder, to extract the latest version identifier from AardwolfPackageChanges.txt
+; Script, run at compile time by installer builder, to extract the latest version identifier from DBUMMOPackageChanges.txt
 
 ; http://nsis.sourceforge.net/LineRead
 Function LineRead
 	!define LineRead `!insertmacro LineReadCall`
- 
+
 	!macro LineReadCall _FILE _NUMBER _RESULT
 		Push `${_FILE}`
 		Push `${_NUMBER}`
 		Call LineRead
 		Pop ${_RESULT}
 	!macroend
- 
+
 	Exch $1
 	Exch
 	Exch $0
@@ -19,7 +19,7 @@ Function LineRead
 	Push $3
 	Push $4
 	ClearErrors
- 
+
 	IfFileExists $0 0 error
 	IntOp $1 $1 + 0
 	IntCmp $1 0 error 0 plus
@@ -34,7 +34,7 @@ Function LineRead
 	IntOp $1 $4 + $1
 	IntOp $1 $1 + 1
 	IntCmp $1 0 error error
- 
+
 	plus:
 	FileOpen $2 $0 r
 	IfErrors error
@@ -46,11 +46,11 @@ Function LineRead
 	FileClose $2
 	goto end
 	FileClose $2
- 
+
 	error:
 	SetErrors
 	StrCpy $0 ''
- 
+
 	end:
 	Pop $4
 	Pop $3
@@ -68,7 +68,7 @@ FunctionEnd
     Call StrRep
     Pop ${output}
 !macroend
- 
+
 !macro Func_StrRep
     Function StrRep
         Exch $R2 ;new
@@ -83,7 +83,7 @@ FunctionEnd
         Push $R7
         Push $R8
         Push $R9
- 
+
         StrCpy $R3 0
         StrLen $R4 $R1
         StrLen $R6 $R0
@@ -103,7 +103,7 @@ FunctionEnd
             IntOp $R3 $R3 + $R9 ;move offset by length of the replacement string
             Goto loop
         done:
- 
+
         Pop $R9
         Pop $R8
         Pop $R7
