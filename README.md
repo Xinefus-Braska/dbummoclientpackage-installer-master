@@ -19,6 +19,6 @@ git clone -b MUSHclient --depth 1 git@github.com:Xinefus-Braska/DBUMMOMUSH.git N
 cd NEW_DBUMUSH_RELEASE
 wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer-master/master/dbumush_installer.nsi
 wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer-master/master/get_version.nsi
-wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer/master/hello.rtf
+wget https://raw.githubusercontent.com/Xinefus-Braska/dbummoclientpackage-installer-master/master/hello.rtf
 wine ~/.wine/drive_c/Program\ Files\ \(x86\)/NSIS/makensis.exe dbumush_installer.nsi
 ```
