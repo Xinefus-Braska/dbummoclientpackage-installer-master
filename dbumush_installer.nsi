@@ -7,6 +7,8 @@
 ;--------------------------------
 SetCompressor /SOLID /FINAL lzma
 
+Unicode True
+
 ; We want to get version information at compile time. The docs say to
 ; make a second installer that can be "!system"ed to generate a
 ; text file with a "!define" in it and then "!include" that file.
