@@ -28,7 +28,6 @@ Name "DBUMMO MUSHclient ${PackageVersion}"
 
 ; File to write
 OutFile "DBUMMO_MUSHclient_${PackageVersion}.exe"
-Unicode True
 
 ; rtf or txt file - remember if it is txt, it must be in the DOS text format (\r\n)
 LicenseData "hello.rtf"
