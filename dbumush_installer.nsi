@@ -59,18 +59,18 @@ WriteRegStr HKCU "Software\DBUMMOMUSHclient" "Install_Dir" "$INSTDIR"
 ; Add most files always, e"x"cluding the listed ones.
 SetOverwrite on
 AllowSkipFiles off
-File /r /x Aardwolf.db /x Aardwolf.mcl /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore /x appveyor.yml MUSHclient\*
-
+File /r /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore /x appveyor.yml MUSHclient\*
+; removed this but will add it back in once I have the files created. /x Aardwolf.db /x Aardwolf.mcl
 ; Add the next files only if not already there.
 ; You could technically do this in one line after SetOverwrite off
 ; with Files /r MUSHclient\* again, but then the installer reports
 ; double the required space even though it's all just duplicates.
 SetOverwrite off
-File MUSHclient\Aardwolf.db
+;File MUSHclient\Aardwolf.db
 File MUSHclient\mushclient_prefs.sqlite
 File MUSHclient\MUSHclient.ini
 SetOutPath $INSTDIR\worlds
-File MUSHclient\worlds\Aardwolf.mcl
+;File MUSHclient\worlds\Aardwolf.mcl
 SetOutPath $INSTDIR\worlds\plugins\state
 File MUSHclient\worlds\plugins\state\*
 SetOutPath $INSTDIR
