@@ -70,7 +70,7 @@ SetOverwrite off
 File MUSHclient\mushclient_prefs.sqlite
 File MUSHclient\MUSHclient.ini
 SetOutPath $INSTDIR\worlds
-;File MUSHclient\worlds\DBUMMO.MCL
+File MUSHclient\worlds\DBUMMO.MCL
 SetOutPath $INSTDIR\worlds\plugins\state
 ;File MUSHclient\worlds\plugins\state\*
 SetOutPath $INSTDIR
