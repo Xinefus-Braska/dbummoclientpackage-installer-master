@@ -59,7 +59,7 @@ WriteRegStr HKCU "Software\DBUMMOMUSHclient" "Install_Dir" "$INSTDIR"
 ; Add most files always, e"x"cluding the listed ones.
 SetOverwrite on
 AllowSkipFiles off
-File /r /x DBUMMO.mcl /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore /x appveyor.yml MUSHclient\*
+File /r /x DBUMMO.MCL /x state /x mushclient_prefs.sqlite /x MUSHclient.ini /x .gitignore /x appveyor.yml MUSHclient\*
 ; removed this but will add it back in once I have the files created. /x Aardwolf.db
 ; Add the next files only if not already there.
 ; You could technically do this in one line after SetOverwrite off
@@ -70,7 +70,7 @@ SetOverwrite off
 File MUSHclient\mushclient_prefs.sqlite
 File MUSHclient\MUSHclient.ini
 SetOutPath $INSTDIR\worlds
-;File MUSHclient\worlds\DBUMMO.mcl
+;File MUSHclient\worlds\DBUMMO.MCL
 SetOutPath $INSTDIR\worlds\plugins\state
 ;File MUSHclient\worlds\plugins\state\*
 SetOutPath $INSTDIR
